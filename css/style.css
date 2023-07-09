@@ -1,0 +1,116 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: var(--DarkBlue);
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+}
+
+.box {
+  position: relative;
+  margin: 4em 1em;
+  padding: 1em;
+  max-width: 375px;
+  background-color: var(--DarkGrayishBlue);
+  text-align: center;
+  border-radius: 15px;
+}
+.box__text-num {
+  color: var(--NeonGreen);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.box h1 {
+  padding: 1em 0;
+  color: var(--LightCyan);
+  font-size: 2rem;
+  line-height: 30px;
+}
+.box__img-mobile {
+  padding-bottom: 1em;
+}
+.box__img-desktop {
+  display: none;
+}
+.box__img-cube {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  width: 50px;
+  height: 50px;
+  background-color: var(--NeonGreen);
+  border: 3px solid transparent;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+.box__img-cube:focus {
+  outline: none;
+  border: 3px solid var(--DarkBlue);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    align-items: center;
+  }
+  .box {
+    max-width: 800px;
+    min-height: 250px;
+  }
+  .box__text-num {
+    font-size: 2rem;
+  }
+  .box h1 {
+    font-size: 3.4rem;
+    line-height: 45px;
+  }
+  .box__img-desktop {
+    display: block;
+    padding: 0 2em 2em 2em;
+    width: 100%;
+  }
+  .box__img-mobile {
+    display: none;
+  }
+  .box__img-cube {
+    padding: 3em;
+    transition: box-shadow 0.3s;
+  }
+  .box__img-cube:hover {
+    box-shadow: 0 0 50px var(--NeonGreen);
+  }
+  .box__img-cube img {
+    transition: transform 0.3s;
+    transform: scale(1.3);
+  }
+  .box__img-cube:hover img {
+    transform: rotate(180deg);
+  }
+}/*# sourceMappingURL=style.css.map */
