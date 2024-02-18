@@ -1,3 +1,6 @@
+Live server: https://main--cheerful-rolypoly-3b03f1.netlify.app/
+![Nowy obraz mapy bitowej](https://github.com/Kamilbd/10.advice-generator-app-main/assets/99655638/3a2820a9-ea3a-4142-baf5-39cc60c05236)
+
 # Frontend Mentor - Advice generator app solution
 
 This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
